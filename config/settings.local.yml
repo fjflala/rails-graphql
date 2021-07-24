@@ -1,8 +1,0 @@
-db:
-  postgresql:
-    username: postgres
-    password:
-    host: localhost
-    port: 5433
-  redis:
-    url: redis://localhost:6380/0

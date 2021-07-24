@@ -1,15 +1,19 @@
 development:
+  host: localhost
   adapter: postgresql
   encoding: unicode
-  database: myapp_development
+  database: martian_library-db_development
   pool: 5
-  username: myapp
-  password: password1
+  username: postgres
+  password:
+  port: 5433
 
 test:
+  host: localhost
   adapter: postgresql
   encoding: unicode
-  database: myapp_test
+  database: martian_library-db_test
   pool: 5
-  username: myapp
-  password: password1
+  username: postgres
+  password:
+  port: 5433
