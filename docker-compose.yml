@@ -1,0 +1,21 @@
+version: "3.6"
+services:
+  db:
+    image: postgres:12.6
+    container_name: martian_library-db
+    volumes:
+      - database:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: "trust"
+
+  redis:
+    image: redis:5.0.12
+    container_name: martian_library-redis
+    ports:
+      - "6380:6379"
+
+volumes:
+  database:
+    name: "martian_library-database"
